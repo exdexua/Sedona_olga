@@ -14,7 +14,7 @@
       </a>
       <ul class="navigation_list">
         <li class="navigation_item">
-          <a class="navigation_link navigation_link_current" href="#">Главная</a>
+          <a class="navigation_link navigation_link_current">Главная</a>
         </li>
         <li class="navigation_item">
           <a class="navigation_link" href="about.html">О Седоне</a>
@@ -35,7 +35,7 @@
           </a>
           </li>
         <li class="navigation_item">
-          <button class="brown_button" >Хочу сюда!</button>
+          <button class="button navigation_button" >Хочу сюда!</button>
         </li>
       </ul>
     </nav>
@@ -51,16 +51,16 @@
             <span class="advantages_item_number">— №1 —</span>
             <p class="advantages_item_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <ul class="advantages_list"> <!--добавить класс-->
-            <li class="advantages_item"> <!--добавить класс-->
+          <ul class="advantages_list advantages_list_basics"> 
+            <li class="advantages_item advantages_item_basics">
               <b>Жильё</b>
               <p class="advantages_item_description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantages_item"> <!--добавить класс-->
+            <li class="advantages_item advantages_item_basics">
               <b>Еда</b>
               <p class="advantages_item_description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantages_item"> <!--добавить класс-->
+            <li class="advantages_item advantages_item_basics">
               <b>Сувениры</b>
               <p class="advantages_item_description">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -82,7 +82,7 @@
         </li>
         <li class="advantages_item">
           <div class="advantages_item_container">
-            <h3 class="advantages_item_title">НКрасивая дорога</h3>
+            <h3 class="advantages_item_title">Красивая дорога</h3>
             <span class="advantages_item_number">— №4 —</span>
             <p class="advantages_item_description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
@@ -96,9 +96,44 @@
         </li>
       </ul>
     </section>
+    <section class="search_hotel">
+      <h2 class="visually_hidden">Поиск гостиницы</h2>
+      <b class="search_hotel">Заинтересовались?</b>
+      <p class="search_hotel">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="button search_hotel_button" href="#">Поиск гостиницы в Седоне</a>
+    </section>
   </main>
-  <footer>
-
+  <footer class="page_footer">
+    <section class="newsletter">
+      <h2 class="newsletter_title">Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter_form" action="https://echo.htmlacademy.ru/courses" method="post">
+        <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+        <button class="button newsletter_button" type="submit">Подписаться</button>
+      </form>
+    </section>
+    <section class="footer_social">
+      <h2 class="visually_hidden">Наши контакты</h2>
+      <ul class="footer_social_list">
+        <li class="footer_social_item">
+          <a class="button" href="#">
+            <span class="visually_hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="footer_social_item">
+          <a class="button" href="#">
+            <span class="visually_hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="footer_social_item">
+          <a class="button" href="#">
+            <span class="visually_hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer_social_phone" href="tel:+78128121212">+7 812 812-12-12</a>
+      <a class="htmlacademy_link" href="htpps://htmlacademy.ru/">.html academy</a>
+    </section>
   </footer>
 </body>
 </html>

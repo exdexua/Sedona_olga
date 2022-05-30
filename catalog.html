@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гостиницы Седоны</title>
+</head>
+<body>
+  <header class="page_header">
+    <nav class="navigation">
+      <a class="navigation_logo" href="#">
+        <img class="page_header_logo" src="" alt="Логотип города Седона">
+      </a>
+      <ul class="navigation_list">
+        <li class="navigation_item">
+          <a class="navigation_link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="about.html">О Седоне</a>
+          </li>
+        <li class="navigation_item">
+          <a class="navigation_link navigation_link_current">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation_list navigation_user">
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">
+            <span class="visually_hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">
+            <span class="visually_hidden">Избранное</span>
+          </a>
+          </li>
+        <li class="navigation_item">
+          <button class="button navigation_button" >Хочу сюда!</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main_inner">
+       <header class="inner_header">
+          <h1 class="inner_title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+              <li class="breadcrumbs_item">
+                  <a class="breadcrumbs_item" href="index.html">
+                      <span class="visually_hidden">Главная</span>
+                  </a>
+              </li>
+              <li class="breadcrumbs_item">
+                <a class="breadcrumbs_item">Гостиницы</a>
+            </li>
+          </ul>
+       </header>
+       <section class="catalog_filter">
+          <h2 class="catalog_filter_title">Поиск жилья по фильтрам</h2>  
+          <form class="catalog_filter_form" action="htpps://echo.htmlacademy.ru/courses" method="get">
+              <fieldset class="catalog_filter_group">
+                  <legend class="catalog_filter_title">Инфраструктура:</legend>
+                  <ul class="catalog_filter_list">
+                    <li class="catalog_filter_item">
+                        <label class="filter">
+                            <input class="filter_input" type="checkbox" name="swimming-pool" checked>
+                            Бассейн
+                        </label>
+                    </li> 
+                    <li class="catalog_filter_item">
+                        <label class="filter">
+                            <input class="filter_input" type="checkbox" name="parking" checked>
+                            Парковка
+                        </label>
+                    </li>
+                    <li class="catalog_filter_item">
+                        <label class="filter">
+                            <input class="filter_input" type="checkbox" name="wifi">
+                            Wi-Fi
+                        </label>
+                    </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog_filter_group">
+                <legend class="catalog_filter_title">Тип жилья:</legend>
+                <ul class="catalog_filter_list">
+                    <li class="catalog_filter_item">
+                        <label class="filter">
+                            <input class="filter_input" type="radio" name="property-type" value="hotel" checked>
+                            Гостиница
+                        </label>
+                    </li> 
+                    <li class="catalog_filter_item">
+                        <label class="filter">
+                            <input class="filter_input" type="radio" name="property-type" value="motel">
+                            Мотель
+                        </label>
+                    </li>
+                    <li class="catalog_filter_item">
+                        <label class="filter">
+                            <input class="filter_input" type="radio" name="property-type" value="apartment">
+                            Апартаменты
+                        </label>
+                    </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog_filter_group">
+                <legend class="catalog_filter_title">Стоимость, ₽:</legend>
+                    <!--тут будет стоимость-->
+              </fieldset>
+              <button class="button" type="submit">Применить</button>
+              <input type="reset" value="Сбросить">
+          </form>
+      </section>
+      <section class="hotels_list">
+        <h2 class="visually_hidden">Список гостиниц</h2>
+        <b class="hotels_found">Найдено гостиниц: 38</b>
+        <select class="hotels_list_sorting" name="sort-hotels-by">
+            <option value="price_lowest_first">Сначала дешёвые</option>
+        </select>
+        <p class="hotels_list_view">
+            <a class="button button_active" href="#">
+                <span class="visually_hidden">Показать карточки</span>
+            </a>
+            <a class="button" href="#">
+                <span class="visually_hidden">Показать крупный список</span>
+            </a>
+            <a class="button" href="#">
+                <span class="visually_hidden">Показать список</span>
+            </a>
+        </p>
+        <ul class="property_list">
+            <li class="property_card">
+                <a class="property_card_link" href="#">
+                    <img class="property_card_image" src="" alt="Amara Resort & Spa">
+                    <h3 class="property_card_title">Amara Resort & Spa</h3>
+                </a>
+                <span class="property_card_type">Гостиница</span>
+                <span class="property_card_price">От 4000 ₽</span>
+                <a class="button product_card_button" href="#">Подробнее</a>
+                <button class="button product_card_button_fav">в избранное</button>
+
+                
+            </li>
+        </ul>
+      </section>
+      </main>
+      <footer></footer>
+</body>
+</html>
