@@ -7,10 +7,10 @@
   <title>Гостиницы Седоны</title>
 </head>
 <body>
-  <header class="page_header">
+  <header class="inner_header">
     <nav class="navigation">
       <a class="navigation_logo" href="#">
-        <img class="page_header_logo" src="" alt="Логотип города Седона">
+        <img class="inner_header_logo" src="images/logo.svg" width="139" height="70" alt="Логотип города Седона">
       </a>
       <ul class="navigation_list">
         <li class="navigation_item">
@@ -43,7 +43,7 @@
   <main class="main_inner">
        <header class="inner_header">
           <h1 class="inner_title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
+          <ol class="breadcrumbs">
               <li class="breadcrumbs_item">
                   <a class="breadcrumbs_item" href="index.html">
                       <span class="visually_hidden">Главная</span>
@@ -52,11 +52,11 @@
               <li class="breadcrumbs_item">
                 <a class="breadcrumbs_item">Гостиницы</a>
             </li>
-          </ul>
+          </ol>
        </header>
        <section class="catalog_filter">
           <h2 class="catalog_filter_title">Поиск жилья по фильтрам</h2>  
-          <form class="catalog_filter_form" action="htpps://echo.htmlacademy.ru/courses" method="get">
+          <form class="catalog_filter_form" action="https://echo.htmlacademy.ru/courses" method="get">
               <fieldset class="catalog_filter_group">
                   <legend class="catalog_filter_title">Инфраструктура:</legend>
                   <ul class="catalog_filter_list">
@@ -131,7 +131,7 @@
         <ul class="property_list">
             <li class="property_card">
                 <a class="property_card_link" href="#">
-                    <img class="property_card_image" src="" alt="Amara Resort & Spa">
+                    <img class="property_card_image" src="images/hotel-1.jpeg" width="300" height="211" alt="Amara Resort & Spa">
                     <h3 class="property_card_title">Amara Resort &amp; Spa</h3>
                 </a>
                 <p class="property_card_info">
@@ -141,13 +141,13 @@
                 <a class="button property_card_button" href="#">Подробнее</a>
                 <button class="button property_card_button_fav">в избранное</button>
                 <p class="property_card_rating">
-                    <span class="visually_hidden">4 звезды</span>
+                    <img class="star_rating" src="images/rate-4stars.svg" width="140" height="37" alt="4 звезды">
                     <span class="user_rating">Рейтинг: 8,5</span>
                 </p>
             </li>
             <li class="property_card">
                 <a class="property_card_link" href="#">
-                    <img class="property_card_image" src="" alt="Villas at Poco Diablo">
+                    <img class="property_card_image" src="images/hotel-2.jpeg" width="300" height="211" alt="Villas at Poco Diablo">
                     <h3 class="property_card_title">Villas at Poco Diablo</h3>
                 </a>
                 <p class="property_card_info">
@@ -157,13 +157,13 @@
                 <a class="button property_card_button" href="#">Подробнее</a>
                 <button class="button property_card_button_fav">в избранное</button>
                 <p class="property_card_rating">
-                    <span class="visually_hidden">4 звезды</span>
+                    <img class="star_rating" src="images/rate-4stars.svg" width="140" height="37" alt="4 звезды">
                     <span class="user_rating">Рейтинг: 9,2</span>
                 </p>
             </li>
             <li class="property_card">
                 <a class="property_card_link" href="#">
-                    <img class="property_card_image" src="" alt="Desert Quail Inn">
+                    <img class="property_card_image" src="images/hotel-3.jpeg" width="300" height="211" alt="Desert Quail Inn">
                     <h3 class="property_card_title">Desert Quail Inn</h3>
                 </a>
                 <p class="property_card_info">
@@ -173,13 +173,13 @@
                 <a class="button property_card_button" href="#">Подробнее</a>
                 <button class="button property_card_button_fav">в избранное</button>
                 <p class="property_card_rating">
-                    <span class="visually_hidden">3 звезды</span>
+                    <img class="star_rating" src="images/rate-3stars.svg" width="140" height="37" alt="3 звезды">
                     <span class="user_rating">Рейтинг: 6,9</span>
                 </p>
             </li>
             <li class="property_card">
                 <a class="property_card_link" href="#">
-                    <img class="property_card_image" src="" alt="GreenTree Inn">
+                    <img class="property_card_image" src="images/hotel-4.jpeg" width="300" height="211" alt="GreenTree Inn">
                     <h3 class="property_card_title">GreenTree Inn</h3>
                 </a>
                 <p class="property_card_info">
@@ -189,7 +189,7 @@
                 <a class="button property_card_button" href="#">Подробнее</a>
                 <button class="button property_card_button_fav">в избранное</button>
                 <p class="property_card_rating">
-                    <span class="visually_hidden">2 звезды</span>
+                    <img class="star_rating" src="images/rate-2stars.svg" width="140" height="37" alt="2 звезды">
                     <span class="user_rating">Рейтинг: 5,0</span>
                 </p>
             </li>
@@ -249,7 +249,9 @@
               </li>
             </ul>
             <a class="footer_social_phone" href="tel:+78128121212">+7 812 812-12-12</a>
-            <a class="htmlacademy_link" href="htpps://htmlacademy.ru/">.html academy</a>
+            <a class="htmlacademy_link" href="htpps://htmlacademy.ru/">
+                <img class="htmlacademy_logo" src="images/HTML-Academy.svg" width="114.9" height="32.9" alt="Разработчик .html academy">
+            </a>
         </section>
       </footer>
 </body>
